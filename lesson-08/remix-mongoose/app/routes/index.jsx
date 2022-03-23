@@ -22,8 +22,9 @@ export default function Index() {
             <li key={book._id}>
               <Link
                 to={`/books/${book._id}`}
-                className="text-blue-600 hover:underline">
-                {book.title}
+                className="text-blue-600 hover:underline"
+              >
+                {book.title} | {book.author}
               </Link>
             </li>
           );
